@@ -102,7 +102,7 @@ app.get('/', (request, response) => {
 // 书城小说首页接口
 app.get('/book/home', (request, response) => {
     const conn = connect()
-    conn.query('SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info_bak` WHERE cover != \'\'', (err, results) => {
+    conn.query('SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info` WHERE cover != \'\'', (err, results) => {
         const length = results.length
         const banner = constant.resUrl + '/home_banner.jpg'
         const guessYouLike = []
@@ -181,7 +181,7 @@ app.get('/book/home', (request, response) => {
 app.get('/book/detail', (request, response) => {
     const conn = connect()
     const fileName = request.query.fileName
-    const sql = 'SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info_bak` WHERE `file_name` = ' + `'${fileName}'`
+    const sql = 'SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info` WHERE `file_name` = ' + `'${fileName}'`
     conn.query(sql, (err, result) => {
         if (err) {
             response.json({
@@ -212,7 +212,7 @@ app.get('/book/detail', (request, response) => {
 // 书城小说列表接口
 app.get('/book/list', (request, response) => {
     const conn = connect()
-    conn.query('SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info_bak` WHERE `cover` != \'\'', (err, results) => {
+    conn.query('SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info` WHERE `cover` != \'\'', (err, results) => {
         if (err) {
             response.json({
                 error_code: 1,
@@ -239,7 +239,7 @@ app.get('/book/list', (request, response) => {
 // 书城小说翻转卡片推荐小说接口
 app.get('/book/flat-list', (request, response) => {
     const conn = connect()
-    conn.query('SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info_bak` WHERE `cover` != \'\'', (err, results) => {
+    conn.query('SELECT `id`, `file_name` as `fileName`, `cover`, `title`, `author`, `publisher`, `book_id` as `bookId`, `category`, `category_text` as `categoryText`, `language`, `root_file` as `rootFile` FROM  `store_book_info` WHERE `cover` != \'\'', (err, results) => {
         if (err) {
             response.json({
                 error_code: 1,

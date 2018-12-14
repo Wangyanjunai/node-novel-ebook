@@ -13,9 +13,14 @@ function createVoice(req, res) {
     // const lang = 'cn'
 
     let engineType = 'intp65'
+
     if (lang.toLowerCase() === 'en') {
         engineType = 'intp65_en'
     }
+    if (lang.toLowerCase() === 'zh-cn') {
+        engineType = 'intp65'
+    }
+
     const speed = '30'
     const voiceParam = {
         auf: 'audio/L16;rate=16000',

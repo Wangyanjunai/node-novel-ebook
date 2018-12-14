@@ -8,9 +8,9 @@ let dbPwd
 let dbName
 
 if (env === 'dev') {
-    resUrl = 'http://localhost:9000'
+    resUrl = 'http://192.168.1.138:9000'
     mp3FilePath = 'D:/Program/Resources/mp3'
-    dbHost = 'localhost'
+    dbHost = '192.168.1.138'
     dbUser = 'root'
     dbPwd = '123456',
     dbName = 'sell'

@@ -112,7 +112,7 @@ app.get('/book/home', (request, response) => {
         const categoryList = createCategoryData(results)
         const categories = [
             {
-                'category': 1,
+                'category': 7,
                 'num': 24,
                 'img1': constant.resUrl + '/cover/cam/cover1.jpg',
                 'img2': constant.resUrl + '/cover/cam/cover2.jpg'
@@ -138,19 +138,19 @@ app.get('/book/home', (request, response) => {
                 'img2': constant.resUrl + '/cover/wx/cover2.jpg'
             }, {
                 'category': 6,
+                'num': 14,
+                'img1': constant.resUrl + '/cover/xx/cover1.jpg',
+                'img2': constant.resUrl + '/cover/xx/cover2.jpg'
+            }, {
+                'category': 1,
                 'num': 10,
                 'img1': constant.resUrl + '/cover/xh/cover1.jpg',
                 'img2': constant.resUrl + '/cover/xh/cover2.jpg'
             }, {
-                'category': 7,
+                'category': 8,
                 'num': 10,
                 'img1': constant.resUrl + '/cover/xy/cover1.jpg',
-                'img2': constant.resUrl + '/cover/xy/cover2.jpg'
-            }, {
-                'category': 8,
-                'num': 14,
-                'img1': constant.resUrl + '/cover/xx/cover1.jpg',
-                'img2': constant.resUrl + '/cover/xx/cover2.jpg',
+                'img2': constant.resUrl + '/cover/xy/cover2.jpg',
             }]
         randomArray(9, length).forEach(key => {
             guessYouLike.push(createGuessYouLikeData(createData(results, key)))

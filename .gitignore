@@ -1,9 +1,9 @@
-.DS_Store
+/*.DS_Store
 vcs.xml
-node_modules
-/dist
-.iml
-.yml
+/node_modules/
+/dist/
+/*.iml
+/*.yml
 
 # local env files
 .env.local
@@ -17,11 +17,12 @@ yarn-error.log*
 # Editor directories and files
 .idea
 .vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
-env.js
-const.js
+/*.suo
+/*.ntvs*
+/*.njsproj
+/*.sln
+/*.sw*
+/*.txt
+/env.js
+/const.js
 

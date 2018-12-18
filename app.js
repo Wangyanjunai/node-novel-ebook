@@ -46,7 +46,7 @@ function createCategoryIds(n) {
 }
 
 function createCategoryData(data) {
-    const categoryIds = createCategoryIds(1)
+    const categoryIds = createCategoryIds(0)
     const result = []
     categoryIds.forEach(categoryId => {
         const subList = data.filter(item => item.category === categoryId).slice(0, 4)

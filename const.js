@@ -8,19 +8,19 @@ let dbPwd
 let dbName
 
 if (env === 'dev') {
-    resUrl = '***'
-    mp3FilePath = '***'
-    dbHost = '***'
-    dbUser = '***'
-    dbPwd = '***',
-    dbName = '***'
+    resUrl = 'http://127.0.0.1:9000'
+    mp3FilePath = 'D:/Program/Resources/mp3'
+    dbHost = '127.0.0.1'
+    dbUser = 'root'
+    dbPwd = 'MyNewPassword4!@#',
+    dbName = 'sell'
 } else if (env === 'prod') {
-    resUrl = '***'
-    mp3FilePath = '***'
-    dbHost = '***'
-    dbUser = '***'
-    dbPwd = '***',
-    dbName = '***'
+    resUrl = 'http://www.potato369.com:8000'
+    mp3FilePath = '/ebookData/upgrade_file/http/Resources/mp3'
+    dbHost = 'www.potato369.com'
+    dbUser = 'root'
+    dbPwd = 'MyNewPassword4!',
+    dbName = 'sell'
 }
 
 const category = [

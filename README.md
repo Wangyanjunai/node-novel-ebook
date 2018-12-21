@@ -41,3 +41,14 @@ mysql脚本：
 create user 'root'@'%' identified by '123456';
 grant all privileges on *.* to 'root'@'%';
 flush privileges;
+
+
+###有关NodeJs网站：
+
+ [NodeJs](https://nodejs.org)
+ 
+ [NpmJS](https://www.npmjs.com)
+ 
+ [GitHub](https://github.com)
+ 
+ [码云](https://gitee.com)

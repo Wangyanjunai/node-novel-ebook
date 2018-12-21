@@ -95,7 +95,7 @@ function createRecommendData(data) {
     return data
 }
 
-app.get('/', (request, response) => {
+app.get('/', (request, response, text) => {
     response.json(new Date().toDateString())
 })
 

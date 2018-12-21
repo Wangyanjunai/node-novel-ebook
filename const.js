@@ -8,30 +8,30 @@ let dbPwd
 let dbName
 
 if (env === 'dev') {
-    resUrl = 'http://127.0.0.1:9000'
-    mp3FilePath = 'D:/Program/Resources/mp3'
-    dbHost = '127.0.0.1'
-    dbUser = 'root'
-    dbPwd = 'MyNewPassword4!@#',
-    dbName = 'sell'
+    resUrl = '***'
+    mp3FilePath = '***'
+    dbHost = '***'
+    dbUser = '***'
+    dbPwd = '***',
+    dbName = '***'
 } else if (env === 'prod') {
-    resUrl = 'http://www.potato369.com:8000'
-    mp3FilePath = '/ebookData/upgrade_file/http/Resources/mp3'
-    dbHost = 'www.potato369.com'
-    dbUser = 'root'
-    dbPwd = 'MyNewPassword4!',
-    dbName = 'sell'
+    resUrl = '***'
+    mp3FilePath = '***'
+    dbHost = '***'
+    dbUser = '***'
+    dbPwd = '***',
+    dbName = '***'
 }
 
 const category = [
-    'Wuxia',
-    'Xianxia',
-    'Fantasy',
-    'History',
-    'Mystery',
-    'Campus',
-    'Military',
-    'Bizarre'
+    '***',
+    '***',
+    '***',
+    '***',
+    '***',
+    '***',
+    '***',
+    '***'
 ]
 
 /*

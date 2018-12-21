@@ -9,33 +9,29 @@ const fs = require('fs')
 function createVoice(req, res) {
     const text = req.query.text
     const lang = req.query.lang
-    // const text = '测试科大讯飞在线语音合成API的功能，比如说，我们输入一段话，科大讯飞API会在线实时生成语音返回给客户端。'
-    // const lang = 'cn'
-
-    let engineType = 'intp65'
-
+    let engineType = '***'
     if (lang.toLowerCase() === 'en') {
-        engineType = 'intp65_en'
+        engineType = '***'
     }
     if (lang.toLowerCase() === 'zh-cn') {
-        engineType = 'intp65'
+        engineType = '***'
     }
 
     const speed = '30'
     const voiceParam = {
         auf: 'audio/L16;rate=16000',
-        aue: 'lame',
-        voice_name: 'xiaoyan',
+        aue: '***',
+        voice_name: '***',
         speed,
-        volume: '50',
-        pitch: '50',
+        volume: '***',
+        pitch: '***',
         engine_type: engineType,
         text_type: 'text'
     }
 
     const currentTime = Math.floor(new Date().getTime() / 1000)
-    const appId = '5c0f3f67'
-    const apiKey = 'b727bcf8859657dcd191c885935c4569'
+    const appId = '***'
+    const apiKey = '***'
     const xParam = Base64.encode(JSON.stringify(voiceParam))
     const checkSum = md5(apiKey + currentTime + xParam)
     const headers = {}
@@ -44,7 +40,7 @@ function createVoice(req, res) {
     headers['X-Appid'] = appId
     headers['X-CurTime'] = currentTime
     headers['X-CheckSum'] = checkSum
-    headers['X-Real-Ip'] = '127.0.0.1'
+    headers['X-Real-Ip'] = '***'
     const data = qs.stringify({
         text: text
     })

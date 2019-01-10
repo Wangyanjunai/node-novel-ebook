@@ -52,3 +52,5 @@ flush privileges;
  [GitHub](https://github.com)
  
  [码云](https://gitee.com)
+ 
+ 有兴趣的童鞋可以共同参与开发，可以添加我的微信号：wx406151651，QQ：406151651共同参与开发讨论。谢谢合作！！！
